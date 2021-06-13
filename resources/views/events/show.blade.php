@@ -42,7 +42,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 
-<script src="https://eventz.wip/js/eventz-widget.js"></script>
+<script src="'.config('app.url') .'/js/eventz-widget.js"></script>
 
 <script type="text/javascript">
 var exampleCallback = function () {
