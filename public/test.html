@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test embed</title>
+    </head>
+    <body>
+        <h1>Test Embed</h1>
+
+        <div id="eventz-widget-container-3"></div>
+
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"
+        ></script>
+        <script src="https://eventz.wip/js/eventz-widget.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                alert("Order complete!");
+            };
+
+            window.EventzWidget.setup({
+                eventId: 3,
+                iframeContainerId: "eventz-widget-container-3",
+                onOrderComplete: exampleCallback,
+            });
+        </script>
+    </body>
+</html>
